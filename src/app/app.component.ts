@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
@@ -16,4 +18,17 @@ multiplication(){
   let res = this.resultado = (this.numero1 * this.numero2);
   console.log (res);
 }
+divisor(){
+  let res = this.resultado = (this.numero1 / this.numero2)
+  console.log (res)
+}
+constructor (){}
+ 
+miFormulario = new FormGroup ({
+
+username : new FormControl('',Validators.required), 
+
+pass : new FormControl('',Validators.required),
+
+});
 }

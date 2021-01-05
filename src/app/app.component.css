@@ -1,3 +1,32 @@
-.ordenar {
+.ordenar1 {
     text-align: center;
+    background-color: rgb(255, 169, 89);
+    border-radius: 65px;
+    border-color: grey;
+    border-style: solid;
+    border-bottom-width: 30px;
+    border-top: 30px;
+    border-left: 10px;
+    border-right: 10px;
+}
+.ordenar2{
+    text-align: center;
+    text-shadow: 60px;
+    background-origin: padding-box;
+    background-color: rgb(251, 255, 13);
+    border-radius: 50px;
+    border-color:grey(29, 29, 29);
+    border-style:ridge;
+    border-bottom-width: 10px;
+}
+
+.ordenar3{
+    font: bold;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.contenedor {
+    text-align: center;
+    background-color:rgb(251, 255, 13);
 }

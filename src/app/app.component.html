@@ -1,8 +1,11 @@
 <html>
+ 
   <body>
-    <div class="ordenar"> 
+    <div class="ordenar1"> 
+      <div class="ordenar2">
+        <h1 class="ordenar3">Calculadora en Angular </h1>
+      </div>
   <div>
-    <h1>Calculadora en Angular </h1>
     <label for="numero1">Numero 1</label>
     <input [(ngModel)]="numero1" type="number" class="form-control">
   
@@ -13,11 +16,28 @@
   </div>
   <div>
     <button (click)="multiplication()">Multiplicar</button>
+    <button (click)="divisor()">Dividir</button>
     <h5 id="operation">Suma: </h5> <p>( {{numero1}} + {{numero2}} ) = <strong>{{numero1+numero2}}</strong> </p>
     <h5 id="operation">Resta: </h5> <p>( {{numero1}} - {{numero2}} ) = <strong>{{numero1-numero2}}</strong> </p>
     <h5 id="operation">Division: </h5> <p>( {{numero1}} / {{numero2}} ) = <strong>{{numero1/numero2}}</strong> </p>
-    <p *ngIf="resultado >0">resultado de la multiplicacion: <strong>{{resultado}}</strong></p>
+    <p *ngIf="resultado >0">Resultado de la multiplicacion: <strong>{{resultado}}</strong></p>
+    <p *ngIf="resultado >0">Resultado de la division: <strong>{{resultado}}</strong></p> 
   </div>
+  
+</div>
+<div class="contenedor">
+  <form [formGroup]="miFormulario">
+    Usuario:  <input [class.is-invalid]="miFormulario.get('username').touched && miFormulario.get('username').invalid" 
+    type="text" 
+    class="form-control" 
+    formControlName="username">
+    
+    Contraseña:  <input [class.is-invalid]="miFormulario.get('pass').touched && miFormulario.get('pass').invalid"
+    type="password" 
+    class="form-control" 
+    formControlName="pass">
+    <button class="btn btn-primary" type="submit">Enviar</button>
+  </form>
 </div>
 </body>
   </html>
