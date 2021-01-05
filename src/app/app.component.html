@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <div class="ordenar"> 
+  <div>
+    <h1>Calculadora en Angular </h1>
+    <label for="numero1">Numero 1</label>
+    <input [(ngModel)]="numero1" type="number" class="form-control">
+  
+  </div>
+  <div>
+    <label for="numero2">Numero 2</label>
+    <input [(ngModel)]="numero2" type="number" class="form-control">
+  </div>
+  <div>
+    <button (click)="multiplication()">Multiplicar</button>
+    <h5 id="operation">Suma: </h5> <p>( {{numero1}} + {{numero2}} ) = <strong>{{numero1+numero2}}</strong> </p>
+    <h5 id="operation">Resta: </h5> <p>( {{numero1}} - {{numero2}} ) = <strong>{{numero1-numero2}}</strong> </p>
+    <h5 id="operation">Division: </h5> <p>( {{numero1}} / {{numero2}} ) = <strong>{{numero1/numero2}}</strong> </p>
+    <p *ngIf="resultado >0">resultado de la multiplicacion: <strong>{{resultado}}</strong></p>
+  </div>
+</div>
+</body>
+  </html>
+
+
