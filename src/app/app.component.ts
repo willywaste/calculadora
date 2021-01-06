@@ -13,13 +13,14 @@ export class AppComponent {
 numero1 = 0;
 numero2 = 0;
 resultado = 0;
+division = 0;
 
 multiplication(){
   let res = this.resultado = (this.numero1 * this.numero2);
   console.log (res);
 }
 divisor(){
-  let res = this.resultado = (this.numero1 / this.numero2)
+  let res = this.division = (this.numero1 / this.numero2)
   console.log (res)
 }
 constructor (){}
