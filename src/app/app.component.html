@@ -1,11 +1,11 @@
 <html>
- 
   <body>
     <div class="ordenar1"> 
       <div class="ordenar2">
         <h1 class="ordenar3">Calculadora en Angular </h1>
       </div>
   <div>
+    
     <label for="numero1">Numero 1</label>
     <input [(ngModel)]="numero1" type="number" class="form-control">
   
@@ -27,14 +27,26 @@
 </div>
 
 <div class="contenedor">
+  <!--aca esta el titulo del componente -->
+  <h1 class="practica">{{title}}</h1>
+<app-practica></app-practica>
   <form [formGroup]="miFormulario">
-    Usuario:  <input [class.is-invalid]="miFormulario.get('username')!.touched && miFormulario.get('username')!.invalid" type="text" class="form-control" formControlName="username">
+    Usuario:  <input 
+    [class.is-invalid]="miFormulario.get('username')!.touched && miFormulario.get('username')!.invalid" 
+    type="text" class="form-control" 
+    formControlName="username">
     
-    Contraseña: <input [class.is-invalid]="miFormulario.get('username')!.touched && miFormulario.get('pass')!.invalid"type="password" class="form-control" formControlName="pass">
+    Contraseña: <input 
+    [class.is-invalid]="miFormulario.get('username')!.touched && miFormulario.get('pass')!.invalid"
+    type="password" class="form-control" 
+    formControlName="pass">
     
-    <button class="btn btn-primary" type="submit">Enviar</button>
-  </form>
+    <button class="btn btn-primary" 
+    type="submit">Enviar</button>
+  </form>   
 </div>
+
+
 </body>
   </html>
 

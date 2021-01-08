@@ -8,7 +8,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'calculadora';
+  title = 'Practica';
+ 
 
 numero1 = 0;
 numero2 = 0;
