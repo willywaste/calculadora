@@ -1,0 +1,18 @@
+<h3>Direccion E-mail</h3>
+<form [formGroup] = "FormularioFormGroup" (ngSubmit) = "mostrar (FormularioFormGroup.value)">
+
+    <input formControlName="email" type="email" id="mail" name="username" placeholder="Escriba su mail">
+    
+ <h3>Nombre y Apellido</h3>
+<label for="nombreapellido"></label>
+
+<input formControlName="nombreapellido" type="text" name="nombreapellido" placeholder="Nombre y Apellido">
+
+<h3>Mensaje</h3>
+    <p>
+          <textarea formControlName="mensaje" name="mensaje"></textarea>
+    </p>
+    <p>
+        <input  type="submit" value="Enviar Formulario">
+        </p>
+</form>

@@ -1,0 +1,22 @@
+
+<div class="contenedor">
+  
+    <form [formGroup]="miFormulario">
+      <div>
+      Usuario:  <input 
+      [class.is-invalid]="miFormulario.get('username')!.touched && miFormulario.get('username')!.invalid" 
+      type="text" class="form-control" 
+      formControlName="username">
+    </div>
+      <div>
+      Contraseña: <input 
+      [class.is-invalid]="miFormulario.get('username')!.touched && miFormulario.get('pass')!.invalid"
+      type="password" class="form-control" 
+      formControlName="pass">
+    </div>
+      <div>
+      <button class="btn btn-primary" 
+      type="submit">Enviar</button>
+    </div>
+    </form>   
+  </div>
